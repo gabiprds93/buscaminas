@@ -1,0 +1,34 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table
+{
+    margin: 3% auto;
+    font-size: 25px;
+}
+td
+{
+    color: black;
+    background-color: firebrick;
+    width: 65px;
+    height: 65px; 
+    border: 1px solid gray;
+}
+button
+{
+    font-size: 20px;
+}
+.mostrar
+{
+    background-color: white;
+}
+.bomba
+{
+    background-image: url(../img/Bomb-Cool-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
