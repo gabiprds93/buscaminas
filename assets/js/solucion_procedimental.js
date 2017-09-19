@@ -1,3 +1,4 @@
+'use strict';
 const mapa = [
     "*1_1*1__",
     "11_111__",
@@ -27,13 +28,12 @@ function inicio()
 function establecer()
 {
     btnReiniciar.addEventListener("click", reiniciar);
-    //window.addEventListener("click", function(){alert("Sigue jugado")});
 }
 
 function iniciarMatriz(num)
 {
     let matriz = new Array(num);
-    for (var i = 0; i < num; i++)
+    for (let i = 0; i < num; i++)
     {
         matriz[i]= new Array(num);    
     }
@@ -77,27 +77,11 @@ function mostrar()
             this.setAttribute("class", "mostrar");
             this.removeEventListener("click", mostrar);
             cont++;
-            console.log(cont);
         }
         else
         {						
             abrirBombas(mapa);
             setTimeout(function(){alert("Perdiste")}, 100);
-            //break;
-        }
-    }
-}
-
-function ganar()
-{
-    for(let i in celdas)
-    {
-        for(let i in celdas[0])
-        {
-            if(celdas[i][j].className != "mostrar")
-            {
-                //alert
-            }
         }
     }
 }
